@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return(
         <div className={styles.navContainer}>
-            <h3 className={styles.navTitle}>Digital Artwork Shop</h3>
+            <h3 className={styles.navTitle}>NFT Share Market</h3>
             <div style={{ display: "flex", flexDirection: "row"}}>
                 {address && (
                     <div style={{ display: "flex", flexDirection: "row", marginRight: "40px"}}>
@@ -19,7 +19,12 @@ const Navbar = () => {
                         <Link
                             href={`/account/${address}`}
                         >
-                            <p className={styles.navLink}>My Collection</p>
+                            <p className={styles.navLink}>My Shares</p>
+                        </Link>
+                        <Link
+                            href={`https://tally.so/r/w2PR9M`}
+                        >
+                            <p className={styles.navLink}>Sell Your Stocks</p>
                         </Link>
                     </div>
                 )}

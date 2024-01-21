@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
-        <h2>Artwork for sale:</h2>
+        <h2>Available Stocks:</h2>
         <div className={styles.grid}>
         {nfts && nfts.length > 0 ? (
           nfts.map((nft) => (
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             />
           ))
         ) : (
-          <p>No artwork available</p>
+          <p>No Stocks available for sale</p>
         )}
         </div>
       </div>

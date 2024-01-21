@@ -7,7 +7,7 @@ const activeChain = "mumbai";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
-      clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
+      clientId={`2c072ea4b74bb8241164fbc4150c460a`}
       activeChain={activeChain}
       supportedWallets={[
         embeddedWallet(),
